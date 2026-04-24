@@ -1,0 +1,19 @@
+# Normalize line endings automatically
+* text=auto
+
+# Shell scripts must use LF (Docker init scripts break with CRLF)
+*.sh text eol=lf
+
+# SQL init scripts must use LF
+*.sql text eol=lf
+
+# Prisma schema
+*.prisma text eol=lf
+
+# Binary files — no line-ending conversion
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary

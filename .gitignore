@@ -1,0 +1,69 @@
+# ─── Dependencies ────────────────────────────────────────────────────────────
+node_modules/
+.pnp
+.pnp.js
+
+# ─── Build outputs ───────────────────────────────────────────────────────────
+dist/
+build/
+.next/
+out/
+
+# ─── Environment files (NEVER commit) ────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+backend/.env
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+# ─── Prisma generated ────────────────────────────────────────────────────────
+backend/src/generated/
+backend/prisma/migrations/
+
+# ─── TypeScript cache ────────────────────────────────────────────────────────
+*.tsbuildinfo
+
+# ─── Logs ────────────────────────────────────────────────────────────────────
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pino.log
+logs/
+
+# ─── Testing ─────────────────────────────────────────────────────────────────
+coverage/
+playwright-report/
+test-results/
+.nyc_output/
+
+# ─── JWT keys (NEVER commit private keys) ────────────────────────────────────
+backend/certs/
+*.pem
+*.key
+
+# ─── Evolution API sessions (contain WhatsApp credentials) ───────────────────
+infra/evolution/instances/
+
+# ─── OS generated ────────────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# ─── IDE ─────────────────────────────────────────────────────────────────────
+.vscode/settings.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ─── Misc ────────────────────────────────────────────────────────────────────
+*.bak
+*.tmp
